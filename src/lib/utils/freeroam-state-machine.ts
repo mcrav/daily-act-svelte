@@ -1,11 +1,12 @@
 import { assign, setup } from 'xstate';
-import { exercises, type Exercise, type ExerciseStep } from '$lib/data/exercises';
+import { exercises } from '$lib/data/exercises';
 import { appendMessage, createBotMessage, createUserMessage } from '$lib/utils/chat';
 import type { ChatMessage } from '$lib/types/chat';
 import seedrandom from 'seedrandom';
 import { weightedRandomSample } from './weighted-random-sample';
 import { randomSample } from './random-sample';
 import { AnalyticsEvent } from './analytics';
+import type { Exercise, ExerciseStep } from '$lib/types/exercises';
 
 export interface FreeroamExerciseMachineContext {
 	isOnboarded: boolean;

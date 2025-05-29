@@ -1,6 +1,6 @@
 import { get, writable } from 'svelte/store';
 
-export function useTimer(timerLength: number) {
+export function createTimer(timerLength: number) {
 	const duration = writable(timerLength);
 	const seconds = writable(timerLength);
 	$effect(() => {

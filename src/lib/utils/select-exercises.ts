@@ -1,6 +1,6 @@
-import type { Exercise } from '$lib/data/exercises';
 import seedrandom from 'seedrandom';
 import { weightedRandomSample } from './weighted-random-sample';
+import type { Exercise } from '$lib/types/exercises';
 
 export function selectExercises(allExercises: Exercise[], date: string) {
 	if (date === '2025-04-23') {

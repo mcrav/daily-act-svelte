@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount, type Snippet } from 'svelte';
-	import { type ExerciseStep as TExerciseStep } from '../../data/exercises';
+	import { type ExerciseStep as TExerciseStep } from '$lib/types/exercises';
 	import { type ChatMessage } from '$lib/types/chat';
 	import Timer from '../Timer/Timer.svelte';
 	import TypingIndicator from '../TypingIndicator/TypingIndicator.svelte';
-	import { useTimer } from '$lib/hooks/use-timer.svelte';
 	import * as m from '$lib/paraglide/messages.js';
 	import Button from '../Button/Button.svelte';
 	import Icon from '@iconify/svelte';
+	import { createTimer } from '$lib/utils/create-timer.svelte';
 
 	interface Props {
 		chat: ChatMessage[];
@@ -33,7 +33,9 @@
 		endOfChat,
 	}: Props = $props();
 
-	const { seconds, isStarted, isTouched, playPauseTimer, resetTimer } = useTimer(step?.timer || 0);
+	const { seconds, isStarted, isTouched, playPauseTimer, resetTimer } = createTimer(
+		step?.timer || 0,
+	);
 
 	let inputRef = $state<HTMLTextAreaElement | undefined>();
 

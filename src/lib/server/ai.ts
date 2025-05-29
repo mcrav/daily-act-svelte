@@ -1,5 +1,5 @@
-import type { Exercise } from '$lib/data/exercises';
 import type { ChatMessage } from '$lib/types/chat';
+import type { Exercise } from '$lib/types/exercises';
 import { AIMessage, HumanMessage } from '@langchain/core/messages';
 import { ChatPromptTemplate, MessagesPlaceholder } from '@langchain/core/prompts';
 import { ChatOpenAI } from '@langchain/openai';

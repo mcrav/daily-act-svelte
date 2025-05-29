@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
-	import type { Exercise } from '$lib/data/exercises';
+	import type { Exercise } from '$lib/types/exercises';
 
 	interface Props {
 		onStartBonusExercise: () => void;

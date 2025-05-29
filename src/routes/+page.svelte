@@ -2,7 +2,7 @@
 	import ExerciseStep from '$lib/components/ExerciseStep/ExerciseStep.svelte';
 	import ExerciseTitle from '$lib/components/ExerciseTitle/ExerciseTitle.svelte';
 	import OnboardingModal from '$lib/components/OnboardingModal/OnboardingModal.svelte';
-	import { exerciseCategories, exercises, type Exercise } from '$lib/data/exercises';
+	import { exerciseCategories, exercises } from '$lib/data/exercises';
 	import {
 		cleanLocalStorage,
 		getOnboardingLocalStorageKey,
@@ -27,6 +27,7 @@
 	import { getTodayDateString } from '$lib/utils/datetime';
 	import { createMutation } from '@tanstack/svelte-query';
 	import type { ChatMessage } from '$lib/types/chat';
+	import type { Exercise } from '$lib/types/exercises';
 	import { get } from 'svelte/store';
 
 	const chatMutation = createMutation({
