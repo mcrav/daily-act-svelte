@@ -1,4 +1,4 @@
-# sv
+# Daily ACT Exercises
 
 Demo: https://daily-act-svelte.vercel.app
 

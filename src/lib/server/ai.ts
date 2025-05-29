@@ -27,10 +27,10 @@ const promptTemplate = ChatPromptTemplate.fromMessages([
 	You should use this for general meaning, but personalise it to naturally flow in the chat.
 
 	  When replying:
-	- Acknowledge what the user has specifically said, don't be generic.
+	- Acknowledge what the user has specifically said, if appropriate.
     - Always give the next step of the exericse, don't make up your own steps.
     - You should reword each step so that it flows naturally in the conversation, but don't change the fundamental meaning of the step.
-    - Be non judgemental and show you accept and understand the user's feelings.
+    - Be non judgemental and show you accept and understand the user.
 
 	When replying you should include the personalised reply content, and can specify a timer if it is included in the next step. If no timer is in the next step, just return 0 for timer.
 		`,
