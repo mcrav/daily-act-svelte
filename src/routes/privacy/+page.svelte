@@ -38,8 +38,8 @@
 				<li>Onboarding status</li>
 			</ul>
 			<p class="font-medium">
-				We do not transmit or store this data on any servers. Your personal information never leaves
-				your device through our app.
+				We send your chat messages to OpenAI's API for processing, but we do not store these
+				messages.
 			</p>
 		</div>
 

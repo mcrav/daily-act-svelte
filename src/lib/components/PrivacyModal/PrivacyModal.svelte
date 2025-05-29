@@ -24,7 +24,10 @@
 	aria-label={m.onboarding_modalAriaLabel()}
 >
 	{#snippet content()}
-		<p class="text-center">Everything you write here is private. Nothing leaves your device.</p>
+		<p class="text-center">
+			We do not store your data.<br /><br />But it will be processed by OpenAI according to their
+			API privacy policy.
+		</p>
 		<footer class="mt-6 flex justify-center gap-4">
 			<Button
 				type="button"

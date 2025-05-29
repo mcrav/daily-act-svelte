@@ -1,4 +1,4 @@
-import type { ChatMessage } from './local-storage-repo';
+import type { ChatMessage } from '../types/chat';
 
 type ChatMessageOptions = {
 	content: string;

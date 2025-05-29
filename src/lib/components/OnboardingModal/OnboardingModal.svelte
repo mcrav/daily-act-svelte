@@ -29,14 +29,8 @@
 		</header>
 		<article class="flex flex-col">
 			<ul class="flex list-disc flex-col gap-2">
-				<li>
-					This app is for people already familiar with Acceptance and Commitment Therapy (ACT).
-				</li>
-				<li>To begin, choose an exercise and follow the instructions in the chat.</li>
-				<li>
-					The chat is <b>not</b> AI. All responses are predefined. This means that nothing you type leaves
-					your device, so you can share your thoughts freely.
-				</li>
+				<li>This a demo app for practising journalling and mindfulness exercises.</li>
+				<li>Do not enter any information that you would not share with ChatGPT.</li>
 			</ul>
 		</article>
 		<footer class="mt-6 flex justify-center gap-4">
