@@ -17,7 +17,7 @@
 		FreeroamState,
 	} from '$lib/utils/freeroam-state-machine';
 	import { useMachine } from '@xstate/svelte';
-	import { PUBLIC_DOMAIN, PUBLIC_SITE_ENV } from '$env/static/public';
+	import { PUBLIC_SITE_ENV } from '$env/static/public';
 	import PrivacyModal from '$lib/components/PrivacyModal/PrivacyModal.svelte';
 	import confetti from 'canvas-confetti';
 	import TypingIndicator from '$lib/components/TypingIndicator/TypingIndicator.svelte';
